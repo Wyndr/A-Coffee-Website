@@ -1,0 +1,101 @@
+/* Global Variables for Colors
+Credit: Julie Park https://codepen.io/juliepark/pen/odrjom */
+@import url(https://fonts.googleapis.com/css?family=Edu+NSW+ACT+Foundation);
+:root {
+    --transparent: #00000000;
+    --brown: #5B4644;
+    --coffee: #87624F;
+    --tan: #DAB7A3;
+    --white: #F4E8DA;
+    --water: #859FB5;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #dfba76;
+    display: flex;
+    justify-content: center;
+}
+
+.cup {
+    border: 6px solid white;
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    background-repeat: repeat-x;
+    background-position: 0px 140px;
+    animation: fill 3s ease forwards;
+    box-shadow: 0px 0px 0px 8px wheat;
+}
+
+.intro{
+    position:absolute;
+    top:26%;
+    left:55%;
+    font-family: Edu Nsw Act Foundation;
+    color:white;
+    font-size: 20px;
+}
+
+.handle {
+    border: 8px solid white;
+    position: absolute;
+    left: 100%;
+}
+
+.latte {
+    width: 140px;
+    height: 100px;
+    background-image: linear-gradient(to bottom, var(--transparent) 5%, var(--white) 5%, var(--white) 30%, var(--tan) 30%, var(--tan) 70%, var(--coffee) 70%);
+    border-radius: 8px 8px 70px 70px;
+}
+
+#latte {
+    width: 30px;
+    height: 50px;
+    border-radius: 0px 20px 70px 0px;
+}
+
+.cappuccino{
+    width: 95px;
+    height: 150px;
+    background-image: linear-gradient(to bottom, var(--white) 50%, var(--tan) 50%, var(--tan) 55%, var(--coffee) 60%);
+    border-radius: 8px 8px 40px 40px;
+}
+
+#cappuccino{
+    width: 20px;
+    height: 75px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.americano{
+    width: 80px;
+    height: 90px;
+    background-image: linear-gradient(to bottom, var(--transparent) 13%, var(--water) 13%, var(--water) 50%, var(--coffee) 50%);
+    border-radius: 8px 8px 20px 20px;
+  }
+
+.flatwhite{
+  width: 60px;
+  height: 70px;
+  background-image: linear-gradient(to bottom, var(--transparent) 10%, var(--white) 10%, var(--tan) 60%, var(--coffee) 65%, var(--brown) 90%);
+  border-radius: 15px 15px 50px 50px;
+}
+
+#flatwhite {
+  width: 10px;
+  height: 20px;
+  top: 10%;
+  border-radius: 0px 20px 20px 0px;
+}
+
+@keyframes fill{
+    from{
+      background-position: 0px 140px;
+    }
+    to{
+      background-position: 0px 0px;
+    }
+  }
